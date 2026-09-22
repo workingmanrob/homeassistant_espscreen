@@ -1,0 +1,22 @@
+# ESP Screens - the package a CYD (ESP32-2432S028) builds from over GitHub. ESP Screen Manager writes every
+# screen's own YAML with `packages: display: {url: <this repository>, files: [packages/cyd.yaml]}` and adds the
+# name, the Wi-Fi reference and the unique keys (docs/EASY_SETUP.md); nothing of that lives here.
+#
+# The screen is two packages: core.yaml, which every board shares (the LVGL tree, the cards, the scripts, the
+# entities), and boards/cyd-2432s028.yaml with this board's hardware and sizes. docs/PROFILES.md says how the
+# files fit together. home-like-2432s028.yaml builds the same two files from a checkout.
+substitutions:
+  FONT_DIR: "https://raw.githubusercontent.com/workingmanrob/homeassistant_espscreen/main/fonts"
+
+packages:
+  core: !include core.yaml
+  board: !include boards/generic-esp32-ili9486.yaml
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/workingmanrob/homeassistant_espscreen.git
+      ref: main
+      path: components
+    refresh: 0s
+    components: [xpt2046, smart_display]
