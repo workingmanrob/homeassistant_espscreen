@@ -1,6 +1,6 @@
 # Waveshare ESP32-S3-Touch-LCD-7, experimental
 
-Added in ESP Screen Manager 0.2.110, firmware 0.2.94, for [issue #22](https://github.com/MaxGramser/homeassistant_espscreen/issues/22).
+Added in ESP Screen Manager 0.2.110, firmware 0.2.94, for [issue #22](https://github.com/workingmanrob/homeassistant_espscreen/issues/22).
 This is the **800 x 480 ESP32-S3-Touch-LCD-7**, with GT911 capacitive touch, 8 MB octal PSRAM and 8 or 16 MB flash.
 It is not the 7B, 7C or the version without touch. Physical acceptance has not been performed.
 
@@ -75,7 +75,7 @@ Then press **Save & check**, which validates the complete profile, and **Update 
   stays powered and only the duty falls to zero, so the 4.3-inch brownout cannot occur in the same way, but that has not
   been measured. Setting `CAN_STANDBY: "true"` in the same override is untested.
 
-Reported working on a board revision 1.1 with 8 MB flash by [@Cjdavidson](https://github.com/MaxGramser/homeassistant_espscreen/issues/22), who measured the mod and the dimming range.
+Reported working on a board revision 1.1 with 8 MB flash by [@Cjdavidson](https://github.com/workingmanrob/homeassistant_espscreen/issues/22), who measured the mod and the dimming range.
 
 ## Hardware references
 

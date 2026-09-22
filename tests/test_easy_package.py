@@ -48,8 +48,8 @@ class PackageTests(unittest.TestCase):
             package = (ROOT / 'packages' / f'{board}.yaml').read_text()
             self.assertNotIn('!secret', package)
             self.assertNotIn('type: local', package)
-            self.assertIn('url: https://github.com/MaxGramser/homeassistant_espscreen.git', package)
-            self.assertIn('FONT_DIR: "https://raw.githubusercontent.com/MaxGramser/homeassistant_espscreen/main/fonts"', package)
+            self.assertIn('url: https://github.com/workingmanrob/homeassistant_espscreen.git', package)
+            self.assertIn('FONT_DIR: "https://raw.githubusercontent.com/workingmanrob/homeassistant_espscreen/main/fonts"', package)
             # The fonts of the shared core come from that place; a checkout takes them from fonts/.
             self.assertIn('file: "${FONT_DIR}/Roboto-500.ttf"', profiles.CORE.read_text())
             self.assertIn('FONT_DIR: "fonts"', (ROOT / BOARDS[board]).read_text())

@@ -9,7 +9,7 @@ import { loadLanguage } from "../src/i18n";
 import { state } from "../src/store";
 import type { Languages } from "../src/types";
 
-const GUIDE = "https://github.com/MaxGramser/homeassistant_espscreen/blob/main/docs/TRANSLATING.md";
+const GUIDE = "https://github.com/workingmanrob/homeassistant_espscreen/blob/main/docs/TRANSLATING.md";
 function language(extra: Partial<Languages> = {}): Languages {
   return {
     setting: "auto", effective: "nl", ha: "nl", clock: "auto", clock_effective: "24", numbers: "auto", numbers_effective: "comma",
