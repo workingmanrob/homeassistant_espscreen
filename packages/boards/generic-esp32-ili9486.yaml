@@ -311,7 +311,7 @@ light:
 touchscreen:
   platform: xpt2046
   id: ts_touch
-  spi_id: my_touchscreen
+  #spi_id: my_touchscreen
   cs_pin: 33
   # Polling avoids GPIO36 pull-up errors and noisy PENIRQ edges.
   update_interval: 20ms
