@@ -42,13 +42,15 @@ substitutions:
   TOUCH_AFFINE_YC: "0.000000000"
 
   # ORIENTATION
-  # The panel is always driven at its native 320x480 (see display:); LVGL turns
-  # both the picture and the touch coordinates. DISPLAY_W/H are the logical canvas
-  # the layout uses. Turning a screen a quarter is a setting in ESP Screens, so
-  # these values stay as they are.
-  DISPLAY_W: "480"
-  DISPLAY_H: "320"
-  LVGL_ROTATION: "90"
+  # The panel's own pixels. The display block below always drives it at this size; LVGL turns the picture and
+  # the touch together, so nothing else on this board knows which way the glass hangs.
+  PANEL_W: "240"
+  PANEL_H: "320"
+  # The LVGL angle that lays this panel out lying down (320 x 240). Standing up is a quarter further.
+  ROTATION_LANDSCAPE: "90"
+  # Which way this screen hangs. ESP Screens writes it when the screen is built, the way it writes the language,
+  # and it is the only line that differs between a screen lying down and the same screen standing up.
+  LVGL_ROTATION: "${ROTATION_LANDSCAPE}"
   TOUCH_SWAP_XY: "false"
   # true on this board (resistive XPT2046) — was false on the 032c board
   # (capacitive GT911). This is the original upstream value for this panel.
