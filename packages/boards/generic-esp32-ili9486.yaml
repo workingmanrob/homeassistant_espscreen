@@ -65,6 +65,8 @@ substitutions:
   # every cell from these (runtime_tiles::place_page), so a board with more room states more columns or rows.
   GRID_COLS: "2"
   GRID_ROWS: "3"
+  GRID_COLS_PORTRAIT: "1"
+  GRID_ROWS_PORTRAIT: "4"
   GRID_MARGIN: "9"
   GRID_GAP_X: "8"
   GRID_GAP_Y: "4"
