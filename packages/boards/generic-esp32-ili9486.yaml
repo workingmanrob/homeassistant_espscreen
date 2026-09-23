@@ -368,7 +368,7 @@ display:
     id: my_display
     spi_id: lcd
     model: ili9486
-    data_rate: 40MHz
+    data_rate: 20MHz
     dc_pin: 15
     reset_pin: 4
     cs_pin: 17
