@@ -70,6 +70,7 @@ BOARDS = [
     ("Sunton 2432S028 (CYD 2.8\")", 320, 240, 2.8),
     ("Sunton 2432S032 (CYD 3,2\")", 320, 240, 3.2),
     ("Sunton 2432S028 standing up (CYD 2.8\")", 240, 320, 2.8),
+    ("Custom / ILI9486 (3,5\")", 480, 320, 3.5),
     ("Guition JC3248W535 / WT32-SC01 Plus (3,5\")", 480, 320, 3.5),
     ("Guition JC4827W543 / Sunton 4827S043 (4,3\")", 480, 272, 4.3),
     ("Guition 4848S040 / Seeed Indicator / Waveshare 4\" (4,0\")", 480, 480, 4.0),
