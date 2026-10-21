@@ -74,6 +74,12 @@ waveshare4b:
   model: ESP32-S3-Touch-LCD-4B
   status: experimental
 
+my-ili9486:
+  file: my-ili9486.yaml
+  name: Custom
+  model: ESP32
+  status: new
+
 waveshare35:
   file: waveshare-esp32s3-35.yaml
   name: Waveshare
