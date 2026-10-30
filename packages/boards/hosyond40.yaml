@@ -76,7 +76,7 @@ esp32:
     advanced:
       # ESPHome recommends this itself in the boot log: about 40 KB more IRAM and a smaller binary, as on the CYD.
       sram1_as_iram: true
-  variant: esp32doit-devkit-v1
+  variant: esp32
 
 # One SPI bus, shared by the display (CS GPIO15) and the touch controller (CS GPIO33).
 spi:
