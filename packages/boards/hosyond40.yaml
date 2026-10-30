@@ -25,7 +25,7 @@ packages:
   backlight: !include ../features/backlight.yaml
   self_test: !include ../features/self-test.yaml
   # The light on the RGB LED on the board (the outputs are below).
-  led: !include ../features/rgb-led.yaml
+  #led: !include ../features/rgb-led.yaml
 
 substitutions:
   # The key of this board file; the firmware reports it so ESP Screens knows what board a screen is.
