@@ -71,7 +71,7 @@ substitutions:
 # ============================================================
 
 esp32:
-  board: esp32dev
+  board: esp32doit-devkit-v1
   framework:
     advanced:
       # ESPHome recommends this itself in the boot log: about 40 KB more IRAM and a smaller binary, as on the CYD.
